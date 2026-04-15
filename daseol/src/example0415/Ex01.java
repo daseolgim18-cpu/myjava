@@ -8,6 +8,6 @@ public class Ex01 {
 
         Student s2 = new Student();
         System.out.println(s2);
-        System.out.println("s2 변수가 Student 객체를 참조합니다.);
+        System.out.println("s2 변수가 Student 객체를 참조합니다.");
     }
 }
