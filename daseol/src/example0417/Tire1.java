@@ -1,0 +1,26 @@
+package example0417;
+
+public class Tire1 {
+    //필드
+    public int maxRotation;   // 최대 회전수(최대 수명)
+    public int accumlatedRotation; // 누적 회전수
+    public String location; // 타이어의 위치
+
+    // 생성자
+    public Tire1(String location, int maxRotation) {
+        this.location = location;
+        this.maxRotation = maxRotation;
+    }
+
+    // 메소드
+    public boolean roll() {
+        ++accumlatedRotation;
+        if(accumlatedRotation<maxRotation) {
+            System.out.println(location + " Tire 수명: " + (maxRotation-accumlatedRotation) + "회");
+            return true;
+        } else {
+            System.out.println("***" + location + " Tire 펑크 ***");
+            return false;
+        }
+    }
+}
